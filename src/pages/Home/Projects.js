@@ -39,9 +39,9 @@ const Projects = () => {
                     <figure><img src={electronics} alt="Project 3" style={{ width: '400px', height: '225px' }} /></figure>
                     <div class="card-body">
                         <h2 class="card-title">
-                            Super Grocery Factory
+                            RH Electronics and Co.
                         </h2>
-                        <p>This a type of warehouse website where grocery products are stored in bulk for selling. New stock can be added. Stock of the product can also be increased. User can add, delete, update any product in the system</p>
+                        <p>This is a type of manufacture website. This project has full authentication of admin and user. This project also has dashboard of each type of user. Admin can add new products and user can book for products with minimum quantity for each purchase and many more.</p>
                         <div class="card-actions justify-end">
                             <div class="badge badge-outline">React Js</div>
                             <div class="badge badge-outline">Firebase</div>
