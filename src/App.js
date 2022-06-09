@@ -6,7 +6,7 @@ import Navbar from './pages/Home/Navbar';
 
 function App() {
   return (
-    <div className='mx-auto px-0 lg-px-12 max-w-screen-sm lg:max-w-screen-lg'>
+    <div className='mx-auto px-0 lg:px-12'>
       <Navbar>
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
