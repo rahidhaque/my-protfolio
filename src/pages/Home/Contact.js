@@ -4,8 +4,25 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
+
 const Contact = () => {
-    const { register, formState: { errors }, handleSubmit } = useForm();
+    const { register, formState: { errors }, handleSubmit, reset } = useForm();
+    const onSubmit = data => {
+        emailjs
+            .send('service_lj4dzk4', 'template_svrzcpr', data, 'YZkh73B_-_TS8re0K')
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+        alert("Please Check Your Mail");
+        reset();
+    }
+
     return (
         <div>
             <h2 className='font-bold text-center mt-5'>Contact Now</h2>
@@ -18,9 +35,9 @@ const Contact = () => {
                         <p className='py-2'><FontAwesomeIcon className='px-2' icon={faMailBulk} /> ontirahid@yahoo.com</p>
                     </div>
                 </div>
-                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-accent">
                     <div className="card-body">
-                        <form>
+                        <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="form-control w-full max-w-lg">
                                 <label className="label">
                                     <span className="label-text font-bold">Name</span>
