@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer class="footer footer-center p-10 bg-primary text-primary-content mt-10">
             <div>
-                <p className='font-bold'>Copyright © 2022 - All right reserved</p>
+                <p className='font-bold'>Copyright S M RAHID HAQUE © 2022 - All right reserved</p>
             </div>
             <div>
                 <div class="grid grid-flow-col gap-4">

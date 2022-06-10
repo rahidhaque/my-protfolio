@@ -25,9 +25,9 @@ const Contact = () => {
 
     return (
         <div>
-            <h2 className='font-bold text-center mt-5'>Contact Now</h2>
+            <h2 className='font-bold text-center mt-5 text-2xl'>Contact Now</h2>
             <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center'>
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl mb-0 sm:mb-5">
                     <div class="card-body">
                         <h2 class="card-title">Important Contact Infos</h2>
                         <p className='py-2'><FontAwesomeIcon className='px-2' icon={faLandmark} /> 76 Segunbagicha</p>

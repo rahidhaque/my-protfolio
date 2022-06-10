@@ -5,7 +5,7 @@ import electronics from '../../images/Rh-Electronics.JPG'
 const Projects = () => {
     return (
         <div>
-            <h2 className='text-center font-bold mt-5'>My Projects</h2>
+            <h2 className='text-center font-bold mt-5 text-2xl'>My Projects</h2>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mt-5 place-items-center'>
                 <div class="card w-80 lg:w-96 bg-base-100 shadow-xl">
                     <figure><img src={pondit} alt="Project 1" style={{ width: '350px', height: '200px' }} /></figure>
